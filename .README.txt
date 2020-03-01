@@ -1,0 +1,5 @@
+https://fierce-meadow-18830.herokuapp.com/
+https://git.heroku.com/fierce-meadow-18830.git
+set GOOGLE_APPLICATION_CREDENTIALS=c:/Users/marcu/keys/keys.json
+
+c8cbeee4afa01552e78b84932794f3a35c5ab681
