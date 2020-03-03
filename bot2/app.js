@@ -21,7 +21,7 @@ app.post('/conversation/', async (req, res) => {
     version: '2018-09-19'
   });
   
-  let session = await assistant.createSession(
+  assistant.createSession(
     {
     assistantId: '28034039-a319-4a84-92b2-476dbf02c30a'
     }
