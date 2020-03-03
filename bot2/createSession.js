@@ -9,12 +9,16 @@ const assistant = new AssistantV2({
   url: 'https://api.us-south.assistant.watson.cloud.ibm.com/instances/65d57f1d-d7f0-4017-a0e4-0400b1023294',
 });
 
+
 assistant.createSession({
   assistantId: '28034039-a319-4a84-92b2-476dbf02c30a'
 })
   .then(res => {
-    console.log(JSON.stringify(res, null, 2));
+    //console.log(JSON.stringify(res, null, 2));
+      console.log(JSON.stringify(res.result.session_id))
   })
   .catch(err => {
     console.log(err);
   });
+
+  console.log(x);
