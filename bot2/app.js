@@ -13,7 +13,7 @@ assistant.message(
   {
     input: { text: "I want to open a ticket" },
     assistantId: '28034039-a319-4a84-92b2-476dbf02c30a',
-    sessionId: '75c15e80-5d20-49ab-80d0-221db714c227',
+    sessionId: '797391e8-2a64-440f-a0ea-defc899fc7b2',
   })
   .then(response => {
     console.log(JSON.stringify(response.result, null, 2));
