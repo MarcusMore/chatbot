@@ -37,13 +37,16 @@ app.post('/conversation/', async (req, res) => {
 						text: text
 					},
 					assistantId: '28034039-a319-4a84-92b2-476dbf02c30a',
-					sessionId: "0ba9ae69-8f00-487d-bfbf-f084b063b1bf",
+					sessionId: "2fe35632-2112-4963-87be-f7268460161f",
 					context,
 				})
 				.then(response => {
-					console.log(JSON.stringify(response.result, null, 2));
-					console.log("Watson: " + response.result.output.generic[0].text);
-					return response;
+					//console.log(JSON.stringify(response.result, null, 2));
+					//console.log("Watson: " + response.result.output.generic[0].text);
+					response.context = JSON.stringify(response.result.output.generic[0].text);
+					console.log(JSON.stringify(response.result.output.generic[0].text));
+					//return response.result.output.generic[0].text;
+					
 				})
 				.catch(err => {
 					console.log(err);
