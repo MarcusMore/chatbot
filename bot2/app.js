@@ -37,10 +37,11 @@ app.post('/conversation/', async (req, res) => {
 						text: text
 					},
 					assistantId: '28034039-a319-4a84-92b2-476dbf02c30a',
-					sessionId: "24941333-5135-410a-856c-efee9caff4d7",
-					context
+					sessionId: "023eb9cf-fc3d-44ed-8561-369edd45c132",
+					context,
 				})
 				.then(response => {
+					res.send('hey');
 					console.log(JSON.stringify(response.result, null, 2));
 				})
 				.catch(err => {
